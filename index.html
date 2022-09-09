@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Dom</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            Today:<br>
+            <div class="today"></div>
+            <br>
+            Clock: <br>
+            <div class="hms"></div>
+        </div>
+        <div class="calendar">
+            <div class="ym"></div>
+            <div class="week"></div>
+            <div class="grid"></div>
+        </div>
+        <div class="event">
+            <div class="selected"></div>
+            <div class="control">
+                <input type="text" id="inp" placeholder="Add event" required>
+                <button class="add"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="submission"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

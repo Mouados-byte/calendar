@@ -1,0 +1,201 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+}
+
+.container {
+    width: 80%;
+    height: 50vh;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr ;
+}
+
+.left{
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.content{
+    background-color: rgb(43, 255, 0);
+    width: 100%;
+    height: 100%;
+}
+.event{
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.ym{
+    width: 100%;
+    height: 15%;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: auto;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.week{
+    width: 100%;
+    height: 15%;
+    background-color: rgb(255, 238, 0);
+    color: rgb(0, 0, 0);
+    padding: auto;
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+}
+
+.dayname{
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.grid{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    grid-template-rows: repeat(6 , 1fr);
+}
+
+.days{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.501);
+    border: 1.5px solid black;
+    text-align: center;
+    font-size:1.5rem ;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.days:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1.5px solid rgb(255, 255, 255);
+}
+
+.days:active{
+    background-color: royalblue;
+}
+
+.this-month{
+    color: black;
+    font-size:1.75rem ;
+    font-weight: 600;
+}
+
+.selected{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    background-color: beige;
+    margin: auto;
+}
+
+.today{
+    font-size: 2rem;
+}
+
+.hms{
+    font-size: 2rem;
+}
+
+.control{
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 3px;
+}
+
+.control .inp{
+    width: 75%;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.control .inp:focus{
+    outline: none;
+}
+
+.control .add{
+    width: 20%;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.submission{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.even{
+    display: inline-flex;
+    background-color: white;
+    color: black;
+    border: 2px solid burlywood;
+    width: 43%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.current{
+    background-color: pink;
+    color: black;
+    font-size: 2rem;
+}
+
+.even p{
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.even button{
+    border-radius: 5px;
+}
+
+.clicked{
+    background-color: royalblue;
+    font-size: 1.9rem;
+}
+
+.checkmark{
+    position: relative;
+}
+
+.checkmark::before{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid red;
+    background-color: white;
+    top: 3px;
+    right: 3px;
+    color: red;
+    width: 5px;
+    height: 5px;
+    z-index: 1;
+}
